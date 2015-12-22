@@ -4,7 +4,9 @@
   "description": "[![NPM](https://nodei.co/npm/stalk-me.png)](https://nodei.co/npm/stalk-me/)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "watchify example.js -o bundle.js",
+    "server": "nodemon --exec http-server -e js,css,html -i lib/",
+    "start": "npm run watch & npm run server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/karissa/stalk-me/issues"
   },
-  "homepage": "https://github.com/karissa/stalk-me#readme"
+  "homepage": "https://github.com/karissa/stalk-me#readme",
+  "dependencies": {
+    "browserify": "^12.0.1",
+    "d3": "^3.5.12",
+    "nodemon": "^1.8.1",
+    "watchify": "^3.6.1"
+  }
 }
