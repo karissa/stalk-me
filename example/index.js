@@ -1,8 +1,8 @@
-var stalk = require('./')
+var stalk = require('../')
 
 var json = {
   nodes: [
-    {name: 'karissa', image: '/images/github.ico'},
+    {name: 'karissa', image: '/images/github.ico', href: 'http://github.com/karissa'},
     {name: '@captainkmac', image: '/images/twitter.ico'},
     {name: 'karissamck', image: '/images/linkedin.ico'},
     {name: 'karissa.mckelvey', image: '/images/facebook.ico'},

@@ -4,8 +4,8 @@
   "description": "[![NPM](https://nodei.co/npm/stalk-me.png)](https://nodei.co/npm/stalk-me/)",
   "main": "index.js",
   "scripts": {
-    "watch": "watchify example.js -o bundle.js",
-    "server": "nodemon --exec http-server -e js,css,html -i lib/",
+    "watch": "watchify index.js -o bundle.js",
+    "server": "nodemon --exec http-server -e js,css,html",
     "start": "npm run watch & npm run server"
   },
   "repository": {
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/karissa/stalk-me.git"
   },
   "author": "Karissa McKelvey <karissa@karissamck.com> (http://karissamck.com/)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/karissa/stalk-me/issues"
   },
